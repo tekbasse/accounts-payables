@@ -43,13 +43,13 @@ create index qap_ap_quonumber_key on qap_ap (quonumber);
 
 -- accounts-ledger maintenance
 
-CREATE TRIGGER qap_del_department AFTER DELETE ON qap_ap FOR EACH ROW EXECUTE PROCEDURE qal_del_department();
+--CREATE TRIGGER qap_del_department AFTER DELETE ON qap_ap FOR EACH ROW EXECUTE PROCEDURE qal_del_department();
 -- end trigger
 
-CREATE TRIGGER qap_del_exchangerate BEFORE DELETE ON qap_ap FOR EACH ROW EXECUTE PROCEDURE qal_del_exchangerate();
+--CREATE TRIGGER qap_del_exchangerate BEFORE DELETE ON qap_ap FOR EACH ROW EXECUTE PROCEDURE qal_del_exchangerate();
 -- end trigger
 
-CREATE TRIGGER qap_check_department AFTER INSERT OR UPDATE ON qap_ap FOR EACH ROW EXECUTE PROCEDURE qal_check_department();
+--CREATE TRIGGER qap_check_department AFTER INSERT OR UPDATE ON qap_ap FOR EACH ROW EXECUTE PROCEDURE qal_check_department();
 -- end trigger
 
 --
